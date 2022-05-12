@@ -1,0 +1,20 @@
+create table Team_Details
+(  SI_No INT , Team_Name varchar(20), Captain varchar(20),Owner varchar(20),Home_Ground varchar(30));
+create table fixtures
+(Match_Number int, Home_team varchar(20), Away_team varchar(20),venue varchar(20),team_won varchar(20),
+team_lost varchar(20));
+create table Points
+(Team_Name varchar(20), no_of_wins int ,no_of_losses int ,points int );
+insert into team_details
+values (1,'MI','Rohit Sharma','Ambanis','Mumbai' ),(2,'CSK','MS Dhoni','India Cement','Chennai'),
+(3,'PK','R Ashwin','Prity Zinta','Mohali'),
+(4,'DC','Shreyas Iyer','Jindal','Delhi'),
+(5,'KKR','Dinesh kartik','SRK','Kolkata'),
+(6,'RCB','Vrat Kohli','United Spirits','Banglore'),
+(7,'SRH','David Warner','Sun TV','Hyd'),
+(8,'RR','Ajinkya Rahane','Emerging','Jaipur');
+Query  to display all items:-
+select * from team_details
+select count(si_no)
+from team_details;
+select match_number from fixtures where home_team='RCB';
