@@ -1,0 +1,35 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: milestone_1b
+    description: "milestone_1b result"
+    columns:
+      - name: code
+        tests:
+          - unique
+          - not_null
+  - name: milestone_1a
+    description: "milestone_1a result"
+    columns:
+      - name: code
+        tests:
+          - unique
+          - not_null 
